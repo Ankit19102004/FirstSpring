@@ -1,5 +1,7 @@
 package com.example.FirstSpring.ServiceIMPL;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +20,13 @@ public class studentServiceIMPL implements StudentService {
 		// TODO Auto-generated method stub
 		studentRepository.save(studentDetails);
 		
+	}
+
+
+	@Override
+	public List<StudentDetails> getAllstudent() {
+		// TODO Auto-generated method stub
+		return studentRepository.findAll();
 	}
 
 }
