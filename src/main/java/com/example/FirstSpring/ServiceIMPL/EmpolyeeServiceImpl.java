@@ -41,7 +41,9 @@ public class EmpolyeeServiceImpl implements EmployeeService {
 
 	@Override
 	public EmployeeDetails getEmployeeId(Integer id) {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeRepository.findById(id).get();
+		
 	}
+
+
 	}

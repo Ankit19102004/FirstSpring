@@ -36,6 +36,11 @@ public class EmployeeController {
 		return"Data delete sucessfully";
 		
 	}
+	@GetMapping("/get/{id}")
+	public EmployeeDetails getEmployee(@PathVariable("id") Integer id) {
+		return employeeService.getEmployeeId(id);
+	}
+	
 
 	
 }

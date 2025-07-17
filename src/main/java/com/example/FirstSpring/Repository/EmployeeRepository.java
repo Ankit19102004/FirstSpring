@@ -7,6 +7,8 @@ import com.example.FirstSpring.Model.EmployeeDetails;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<EmployeeDetails, Integer> {
+
+	
 	
 	
 

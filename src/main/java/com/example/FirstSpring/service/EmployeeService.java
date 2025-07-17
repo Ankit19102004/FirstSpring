@@ -15,9 +15,5 @@ void deleteEmployee(Integer id);
 EmployeeDetails getEmployeeId(Integer id);
 
 
-
-
-	
-
 	
 }

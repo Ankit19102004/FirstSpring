@@ -28,5 +28,18 @@ public class studentServiceIMPL implements StudentService {
 		// TODO Auto-generated method stub
 		return studentRepository.findAll();
 	}
+	@Override
+	public void deleteStudent(Integer id) {
+		// TODO Auto-generated method stub
+		studentRepository.deleteById(id);
+		
+	}
+
+
+	@Override
+	public StudentDetails getStudentId(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
